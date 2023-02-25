@@ -26,7 +26,9 @@ const userSchema=new mongoose.Schema(
                     throw new Error('Invalid Email-Id')
                 }
             }
-        }
+        },
+        otp:{type:Number},
+        otpExpire:{type:Number}
     },{timestamps:true}
     )
 
